@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const API_URL =
-  "https://sothink.com.br/apidivas/api/v2/nippon";
+  "https://sothink.com.br/tenniscontrol/api/v2/nippon";
 
 interface FormularioChavesProps {
   onClose: () => void;
@@ -48,7 +48,7 @@ export default function FormularioChaves({
       return imagem;
     }
 
-    return `https://sothink.com.br/apidivas/${imagem.replace(
+    return `https://sothink.com.br/tenniscontrol/${imagem.replace(
       /^\/+/,
       ""
     )}`;
